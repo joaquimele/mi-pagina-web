@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+.max-width{
+
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Estilos similares */
+
+.about, .skills, .contacto, footer{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-contenido, .skills .skills-contenido, .contacto .contacto-contenido{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section{
+    
+    padding: 100px 0;
+}
+
+section .titulo{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .titulo::before{
+
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .titulo::after{
+
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* Estilos del navbar */
+
+.navbar{
+    
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.stick{
+
+    padding: 15px 0;
+    background: crimson; 
+}
+
+.navbar .max-width{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    
+    color: crimson;
+    transition: all 0.3s ease;
+
+}
+
+.navbar.stick .logo a span{
+
+    color: #fff;
+}
+
+.navbar .menu li {
+
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a{
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.navbar.stick .menu li a:hover{
+
+    color: #fff;
+}
+
+/* estilo del menu btn */
+
+.menu-btn{
+
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Estilos de la seccion del home */
+
+.home {
+
+    display: flex;
+    background: url("https://images.hdqwalls.com/wallpapers/dark-abstract-black-minimal-4k-q0.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+
+    margin: auto 0 auto 40px;
+}
+
+.home .home-contenido .texto-1{
+
+    font-size: 27px;
+}
+
+.home .home-contenido .texto-2{
+
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-contenido .texto-3{
+
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-contenido .texto-3 span{
+
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-contenido a{
+
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+
+.home .home-contenido a:hover{
+
+    color: #fff;
+    background: none;
+}
+
+
+/* Estilos de la seccion sobre mi */
+
+section{
+
+    padding: 100px 0;
+}
+
+
+.about .titulo{
+
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about .titulo::before{
+
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .titulo::after{
+
+    content: 'Quién soy';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: crimson;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+.about .about-contenido .left{
+
+    width: 45%;
+}
+
+.about .about-contenido .left img{
+
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;  
+
+}
+
+.about .about-contenido .right{
+
+    width: 55%;
+}
+
+.about .about-contenido .right .texto{
+
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-contenido .right .texto span{
+
+    color: crimson;
+}
+
+.about .about-contenido .right p{
+
+    text-align: justify;
+}
+
+.about .about-contenido .right a{
+
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-contenido .right a:hover{
+
+    color: #111;
+    background: none;
+}
+
+/* Estilos de la seccion de skills */
+
+.skills .titulo::after{
+    
+    content: 'Lo que se';
+}
+
+.skills .skills-contenido .column{
+
+    width: calc(50% - 30px);
+}
+
+.skills .skills-contenido .left .texto{
+
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-contenido .left .p{
+
+    text-align: justify;
+}
+
+.skills .skills-contenido .right .barras{
+
+    margin-bottom: 15px;
+
+}
+
+.skills .skills-contenido .right .info{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.skills .skills-contenido .right span{
+
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-contenido .right .linea{
+
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-contenido .right .linea::before{
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills .skills-contenido .right .html::before{
+
+    width: 90%;
+}
+
+.skills .skills-contenido .right .css::before{
+
+    width: 90%;
+}
+
+.skills .skills-contenido .right .js::before{
+
+    width: 80%;
+}
+
+.skills .skills-contenido .right .react::before{
+
+    width: 50%;
+}
+
+.skills .skills-contenido .right .jquery::before{
+
+    width: 60%;
+}
+
+.skills .skills-contenido .right .c::before{
+
+    width: 80%;
+}
+
+/* Estilos de la seccion de contacto */
+
+.contacto .titulo::after{
+
+    content: '';
+
+}
+
+.contacto .contacto-contenido .column{
+
+    width: calc(50% - 30px);
+}
+
+.contacto .contacto-contenido .texto{
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contacto .contacto-contenido .left p{
+
+    text-align: justify;
+}
+
+.contacto .contacto-contenido .left .iconos{
+
+    margin: 10px 0;
+}
+
+.contacto .contacto-contenido .fila{
+
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contacto .contacto-contenido .fila .info{
+
+    margin-left: 30px;
+}
+
+.contacto .contacto-contenido .fila i{
+
+    font-size: 25px;
+    color: crimson;
+}
+
+.contacto .contacto-contenido .info .head{
+
+    font-weight: 500;
+}
+
+.contacto .contacto-contenido .info .subtitulo{
+
+    color: #333;
+}
+
+/* Estilo de iconos redes sociales */
+
+.redes-sociales{
+
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.icono1{
+    color: #3489eb;
+    font-size: 50px;
+    
+  }
+  .icono2{
+    color: #08153f;
+    font-size: 50px;
+  }
+  .icono3{
+  color:black;
+  font-size: 50px;
+  }
+
+  .icono4{
+      color: black;
+      font-size: 50px;
+  }
+
+/* Estilo del footer */
+
+footer {
+
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+/* responsive media query */
+
+@media (max-width: 1300px){
+
+    .home .max-width{
+
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px){
+
+    .about .about-contenido .left img{
+
+        height: 350px;
+        width: 350px;
+       
+    }
+}
+
+@media (max-width: 991px){
+
+
+    .max-width{
+        
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+
+    .menu-btn{
+
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.activo:before{
+
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.activo{
+
+        left: 0;
+    }
+
+    .navbar .menu li{
+        
+        display: block;
+    }
+
+    .navbar .menu li a{
+
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 26px;
+    }
+
+    .home .home-contenido .texto-2{
+
+        font-size: 70px;
+       
+    }
+    
+    .home .home-contenido .texto-3{
+    
+        font-size: 35px;
+       
+    }
+
+    .home .home-contenido a{
+
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .about .about-contenido .column{
+        
+        width: 100%;
+
+    }
+
+    .about .about-contenido .left{
+        
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+
+    }
+
+    .about .about-contenido .rigth p{
+
+        flex: 100%;
+    }
+
+
+    .max-width{
+
+        max-width: 800px;
+        
+    }
+
+    .skills .skills-contenido .column{
+
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 690px){
+
+
+    .max-width{
+        
+        padding: 0 23px;
+    }
+
+    .home .home-contenido .texto-2{
+
+        font-size: 60px;
+       
+    }
+    
+    .home .home-contenido .texto-3{
+    
+        font-size: 32px;
+       
+    }
+
+    .home .home-contenido a{
+
+        font-size: 20px;
+        padding: 9px 25px;
+    }
+    
+    .skills .skills-contenido .column{
+
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+
+    .home .home-contenido .texto-2{
+
+        font-size: 50px;
+       
+    }
+    
+    .home .home-contenido .texto-3{
+    
+        font-size: 27px;
+       
+    }
+    
+}
